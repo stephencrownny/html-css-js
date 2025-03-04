@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stephen.css">
+    <title>Stephen Ngigi Wanjiru</title>
+    
+</head>
+<body>
+<!-- Nav starts here -->
+<header>
+    <span class="logo">Stephen Ngigi</span>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">Go Dark</button>
+    <!-- Menu Icon for Mobile -->
+    <div class="menu-icon">☰</div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" id="nav-links">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function toggleMenu() {
+                var menu = document.getElementById("nav-links");
+                if (menu) {
+                    menu.classList.toggle("active");
+                } else {
+                    console.error("Menu element not found!");
+                }
+            }
+            
+            document.querySelector(".menu-icon").addEventListener("click", toggleMenu);
+        });
+    </script>
+    
+    <!-- Nav ends here -->
+
+    <main>
+        <!-- HOME/ HERO SECTION STARTS HERE -->
+        
+    <section id="home" class="hero">
+        <div class="overlay">
+            <h1>Stephen Ngigi Wanjiru</h1>
+            <p>A firefighter, Data scientist, AI/ML Engineer full-stack web developer.</p>
+            <!-- <button>Read More</button> -->
+        </div>
+    </section>
+        <!-- HOME/ HERO SECTION ENDS HERE -->
+
+
+        <!-- ABOUT SECTION STARTS HERE -->
+        <section id="about" class="about">
+            <h1 class="about-title" style="display: flex; margin-bottom: 50vh;">About Me </h1>
+            <div class="text-content">
+                <h1>Get to know Stephen And Turn <br>your ideas to live web experiences</h1>
+                <p>Stephen Ngigi Wanjiru is a firefighter, data scientist, full-stack developer, 
+                    and AI engineer <br>with a passion for combining technology and emergency response. 
+                    <br>With expertise in software development, artificial intelligence, <br>and data-driven decision-making, 
+                    he leverages cutting-edge innovations to enhance both firefighting <br>operations and technological advancements across industries..</p>
+                <button>Read More</button>
+            </div>
+            <img src="/imgs/steve studio  1.jpg" alt="Person thinking">
+        </section>
+        <!-- ABOUT SECTION ENDS HERE -->
+
+
+        <!-- PROJECTS SECTION STARTS HERE -->
+        <section id="projects" class="projects">
+            <h1>My Projects</h1>
+            <div class="project-gallery">
+                <img src="/imgs/code 1.jpg" alt="Project 1">
+                <img src="/imgs/code2.jpg" alt="Project 2">
+                <img src="/imgs/code3.jpg" alt="Project 3">
+                <img src="/imgs/code4.jpg" alt="Project 4">
+                <img src="/imgs/code 1.jpg" alt="Project 1">
+                <img src="/imgs/code2.jpg" alt="Project 2">
+                <!-- <img src="imgs/code3.jpg" alt="Project 3">
+                <img src="imgs/code4.jpg" alt="Project 4"> -->
+            </div>
+            <p>Hunger for more! <button style="background: rgb(105, 168, 130);"><a href="https://github.com/dashboard" style="color: white; text-decoration: none;" >Bite</a></button></p>
+        </section>
+        <!-- PROJECTS SECTION ENDS HERE -->
+
+
+        <!-- SKILLS SECTION STARTS HERE -->
+        <section class="c_skills">
+            <div class="container">
+                <div class="center">Beautiful Design<br>HTML & CSS</div>
+                <div class="bubble">ML</div>
+                <div class="bubble">JavaScript</div>
+                <div class="bubble">Python</div>
+                <div class="bubble">Data Science</div>
+                <div class="bubble">NLP</div>
+            </div>
+        </section>
+        <!-- SKILLS SECTION ENDS HERE -->
+
+
+        <!-- CONTACT SECTION START HERE. -->
+        <section id="contact" class="contact">
+            <img src="/imgs/steve studio2.jpg" alt="Contact Image">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We realize that you lead a busy life, so we have made it easy for you to reach us anytime.</p>
+                <p>📞 +254 795586956</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION ENDS HERE -->
+
+        <script src="/main.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stephen Ngigi Wanjiru</p>
+    </footer>
+    
+</body>
+</html>
